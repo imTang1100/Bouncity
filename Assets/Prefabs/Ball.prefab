@@ -106,7 +106,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: 41431a9827797fc4bb276409796467f2, type: 2}
-  collisions: []
+  collisions:
+  - {fileID: 8300000, guid: 9e6905a33e3f54a649f4937b37bfdd1f, type: 3}
+  - {fileID: 8300000, guid: 3185b3c44ad454e87a2adb8c65721e1b, type: 3}
+  - {fileID: 8300000, guid: dee1bbb29a9264d86bd096652a5cc459, type: 3}
+  - {fileID: 8300000, guid: 093ffcc0bdf024f808ce4139575ecead, type: 3}
   shotHit: {fileID: 0}
 --- !u!82 &7047667135672776382
 AudioSource:

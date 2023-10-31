@@ -49,15 +49,15 @@ public class Ball: MonoBehaviour
 
     private void OnCollisionEnter(Collision o)
     {
-        if(audioSrc != null && collisions != null && collisions.Length > 0)
-        {
-            audioSrc.PlayOneShot(collisions[Random.Range(0, collisions.Length)]);
-        }
-
         Facade facade = o.gameObject.GetComponent<Facade>();
-
-        if(facade != null)
+        if (facade != null)
         {
+            // sound played when colliding with a facade.
+            if (audioSrc != null && collisions != null && collisions.Length > 0)
+            {
+                audioSrc.PlayOneShot(collisions[Random.Range(0, collisions.Length)]);
+            }
+
             OnFacadeCollision?.Invoke(facade);
         }
     }
